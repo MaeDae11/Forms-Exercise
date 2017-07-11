@@ -9,18 +9,22 @@
     <body>
         
         <form action="http://localhost:5000" enctype="multipart/form-data" method="POST">
+
+            <!--required user name-->
             <label for="user-name">User Name:</label>
             <input id="user-name" type="text" name="User-Name" value="" required>
             <br>
+            <!--required age-->
             <label for="age">Age:</label>
             <input id="age" type="number" name="Age" value="" required>
             <br>
             <label for="super-hero">Super Hero Name:</label>
-                <input id="super-hero" type="text" name="Super Hero Name">
+            <input id="super-hero" type="text" name="Super Hero Name">
+            <!--cap size-->
             <br>
             <label for+"cap-size">What size of Super Hero Cap would you like?</label>
             <select id="cap-size" name="Size">
-                <option></option>
+                <option default>Do not want a cap</option>
                 <option value="1001">Small</option>
                 <option value="1002">Medium</option>
                 <option value="1003">Large</option>
@@ -28,7 +32,7 @@
             <br>
             <br>
             <!--power selection-->
-            <span><strong>What are your super-powers?</strong></span>
+            <span><strong>What are your super powers?</strong></span>
             <br>
             <label>Speedster
                 <input type="checkbox" name="speed" value="Speedster">
@@ -51,14 +55,16 @@
             </label>
             <br>
 
-
+            <!--bio-->
             <br>
             <textarea name="Bio" rows="10" cols="50" placeholder="Bio time! Tell us about yourself."></textarea>
             <br>
+            <!--tagline-->
             <br>
             <textarea name="tagline" maxlength="50" cols="50" placeholder="Tagline! Sum up in 50 characters or less."></textarea>
             <br>
 
+            <!--arch enemies-->
             <br>
             <span><strong>Who are your arch enemies?</strong></span>
             <br>
@@ -86,6 +92,20 @@
                 <input type="checkbox" name="enemy" value="No Enemies 'cause I'm awesome">
             </label>
             <br>
+
+            <!--choice of weapon-->
+            <br>
+            <span>Choice of Weapon. Hold down Control to select multiple choices.</span>
+            <br>
+            <select name="wepon" multiple>
+                <option value="1001">Nunchucks</option>
+                <option value="1002">Giant Sword</option>
+                <option value="1003">Mind Control</option>
+                <option value="1004">Elemental Control</option>
+                <option value="1005">I'm Batman and just buy whatever I want</option>
+                <option value="1006">It's a secret</option>
+            </select>
+
 
 
             <br>
