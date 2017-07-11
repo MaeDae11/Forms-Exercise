@@ -10,15 +10,49 @@
         
         <form action="http://localhost:5000" enctype="multipart/form-data" method="POST">
             <label for="user-name">User Name:</label>
-            <input id="user-name" type="text" name="user-name" value="">
+            <input id="user-name" type="text" name="user-name" value="" required>
             <br>
             <label for="age">Age:</label>
-            <input id="age" type="number" name="age" value="">
+            <input id="age" type="number" name="age" value="" required>
             <br>
             <label for="super-hero">Super Hero Power(s):</label>
             <input id="super-hero" type="text" name="power">
             <br>
-            
+            <label for+"cap-size">What size of Super Hero Cap would you like?</label>
+            <select id="cap-size" name="size">
+                <option></option>
+                <option value="1001">Small</option>
+                <option value="1002">Medium</option>
+                <option value="1003">Large</option>
+            </select>
+            <br>
+            <span>What are your super-powers?</span>
+            <br>
+            <label>Speedster
+                <input type="checkbox" name="speed" value="Speedster">
+            </label>
+            <br>
+            <label>Super Human Strength
+                <input type="checkbox" name="super-strength" value="Super Human Strength">
+            </label>
+            <br>
+            <label>Basically Batman
+                <input type="checkbox" name="batman" value="Batman Like Abilities">
+            </label>
+            <br>
+            <label>Flame Person
+                <input type="checkbox" name="flame" value="Flame Person">
+            </label>
+            <br>
+            <label>All of the above
+                <input type="checkbox" name="all" value="All Powers are had">
+            </label>
+            <br>
+            <span>Tell a little about yourself:</span>
+            <br>
+            <textarea name="Bio"></textarea>
+            <br>
+
 
 
             <input type="submit">
