@@ -5,30 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="resources/css/index.css">
 </head>
-    <body>
-        
-        <form action="http://localhost:5000" enctype="multipart/form-data" method="POST">
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header" role="presentation">
+                    <span>Super Hero Signup!</span>
+                    <img src="resources/images/bang.png" alt="poof in comic text">
+                </div>
+             </div>
+        </nav>
 
-            <!--required user name-->
-            <label for="user-name">User Name:</label>
-            <input id="user-name" type="text" name="User-Name" value="" required>
-            <br>
-            <!--required age-->
-            <label for="age">Age:</label>
-            <input id="age" type="number" name="Age" value="" required>
-            <br>
-            <label for="super-hero">Super Hero Name:</label>
-            <input id="super-hero" type="text" name="Super Hero Name">
-            <!--cap size-->
-            <br>
-            <label for+"cap-size">What size of Super Hero Cap would you like?</label>
-            <select id="cap-size" name="Size">
-                <option default>Do not want a cap</option>
-                <option value="1001">Small</option>
-                <option value="1002">Medium</option>
-                <option value="1003">Large</option>
-            </select>
+    </header>
+
+    <body class="container">
+
+        <div class="jumbotron">
+            <div class="container">
+
+            </div>
+        </div>
+        
+        <form action="http://localhost:5000" enctype="multipart/form-data" method="POST" class="form-horizontal">
+            <div class="container">
+                <div class="form-group">
+                <!--required user name-->
+                    <label for="user-name" 
+                        class="col-xs-12 col-md-2 control-label">User Name:</label>
+                    <div class="col-xs-12 col-md-4">  
+                        <input id="user-name" type="text" name="User-Name" class="form-control" required>
+                    </div>
+                <!--</div>
+                <div class="form-group">-->
+                <!--required age-->
+                    <label for="age" class="col-xs-12 col-xs-offset-1 col-md-2 control-label">Age:</label>
+                    <div class="col-xs-12 col-xs-offset-1 col-md-4">
+                        <input id="age" type="number" name="Age" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                <!--superhero name-->
+                    <label for="super-hero" class="col-xs-12 col-xs-offset-1 col-md-2 control-label">Super Hero Name:</label>
+                    <div class="col-xs-12 col-xs-offset-1 col-md-4">
+                        <input id="super-hero" type="text" name="Super Hero Name" class="form-control">
+                    </div>
+                </div>
+
+                <!--cap size-->
+                <div class="form-group">    
+                    <label for+"cap-size">What size of Super Hero Cap would you like?</label>
+                    <select id="cap-size" name="Size">
+                        <option default>Do not want a cap</option>
+                        <option value="1001">Small</option>
+                        <option value="1002">Medium</option>
+                        <option value="1003">Large</option>
+                    </select>
+                </div>
+            </div>
             <br>
             <br>
             <!--power selection-->
@@ -59,7 +94,12 @@
             <br>
             <textarea name="Bio" rows="10" cols="50" placeholder="Bio time! Tell us about yourself."></textarea>
             <br>
+            <!--profile image upload-->
+            <span>Upload a picture for your profile</span>
+            <br>
+            <input type="file" name="fileToUpload" id="fileToUpload">
             <!--tagline-->
+            <br>
             <br>
             <textarea name="tagline" maxlength="50" cols="50" placeholder="Tagline! Sum up in 50 characters or less."></textarea>
             <br>
@@ -97,7 +137,7 @@
             <br>
             <span>Choice of Weapon. Hold down Control to select multiple choices.</span>
             <br>
-            <select name="wepon" multiple>
+            <select name="weapon" multiple>
                 <option value="1001">Nunchucks</option>
                 <option value="1002">Giant Sword</option>
                 <option value="1003">Mind Control</option>
@@ -107,10 +147,12 @@
             </select>
 
 
-
+            <br>
             <br>
             <input type="submit">
             <input type="reset">
+
+
         </form>
 
 
