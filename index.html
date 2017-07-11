@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
-    <link rel="stylesheet" href="resources/css/index.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+        <link rel="stylesheet" href="resources/css/index.css">
+    </head>
+
     <header>
         <nav class="navbar navbar-default">
             <div class="container">
@@ -23,166 +24,147 @@
     <body class="container">
 
         <div class="jumbotron">
-            <div class="container">
-
-            </div>
         </div>
         
-        <form action="http://localhost:5000" enctype="multipart/form-data" method="POST" class="form-horizontal">
-            <div class="container first-container col-md-10 col-md-offset-1">
-                <div class="form-group row">
-                <!--required user name-->
-                    <label for="user-name" 
-                        class="col-xs-12 col-md-2 control-label">User Name:</label>
-                    <div class="col-xs-12 col-md-4">  
-                        <input id="user-name" type="text" name="User-Name" class="form-control" required>
-                    </div>
-                <!--</div>
-                <div class="form-group">-->
-                <!--required age-->
-                    <label for="age" class="col-xs-12  col-md-2 control-label">Age:</label>
-                    <div class="col-xs-12  col-md-4">
-                        <input id="age" type="number" name="Age" class="form-control" required>
-                    </div>
-                </div>
-                <div class="form-group row">
-                <!--superhero name-->
-                    <label for="super-hero" class="col-xs-12  col-md-2 control-label">Super Hero Name:</label>
-                    <div class="col-xs-12  col-md-4">
-                        <input id="super-hero" type="text" name="Super Hero Name" class="form-control">
-                    </div>
-                
+        <div class="main-class-1 container">
 
-                <!--cap size-->
-                <!--<div class="form-group">    -->
-                    <label for="cap-size" class="col-xs-12  col-md-4">What size of Super Hero Cap would you like?</label>
-                    <div class="col-xs-12 col-md-2">
-                        <select id="cap-size" name="Size">
-                            <option default>Do not want a cap</option>
-                            <option value="1001">Small</option>
-                            <option value="1002">Medium</option>
-                            <option value="1003">Large</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-xs-12 col-md-6">
-                        <h3><strong>What are your super powers?</strong></h3>
-                        <label>Speedster
-                            <input type="checkbox" name="speed" value="Speedster">
-                        </label>
-                        <br>
-                        <label>Super Human Strength
-                            <input type="checkbox" name="super-strength" value="Super Human Strength">
-                        </label>
-                        <br>
-                        <label>Basically Batman
-                            <input type="checkbox" name="batman" value="Batman Like Abilities">
-                        </label>
-                        <br>
-                        <label>Flame Person
-                            <input type="checkbox" name="flame" value="Flame Person">
-                        </label>
-                        <br>
-                        <label>Frost Bite
-                            <input type="checkbox" name="frost" value="Frost Person">
-                        </label>
-                        <br>
-                        <label>All of the above
-                            <input type="checkbox" name="Powers" value="All Powers are had" checked>
-                        </label>
-                    </div>
+            <form action="http://localhost:5000" enctype="multipart/form-data" method="POST" class="form-horizontal">
 
-                    <div class="col-xs-12 col-md-6 enemies">
+                <div class="main-class container first-container col-md-10 col-md-offset-1">
+                    <div class="form-group row">
+                    <!--required user name-->
+                        <label for="user-name" 
+                            class="col-xs-12 col-md-2 control-label">User Name:</label>
+                        <div class="col-xs-12 col-md-4">  
+                            <input id="user-name" type="text" name="User-Name" class="form-control" required>
+                        </div>
+                    <!--</div>
+                    <div class="form-group">-->
+                    <!--required age-->
+                        <label for="age" class="col-xs-12  col-md-2 control-label">Age:</label>
+                        <div class="col-xs-12  col-md-4">
+                            <input id="age" type="number" name="Age" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                    <!--superhero name-->
+                        <label for="super-hero" class="col-xs-12  col-md-2 control-label">Super Hero Name:</label>
+                        <div class="col-xs-12  col-md-4">
+                            <input id="super-hero" type="text" name="Super Hero Name" class="form-control">
+                        </div>
                     
-                        <h3><strong>Who are your arch enemies?</strong></h3>
-                        <label>Magneto
-                            <input type="checkbox" name="enemy" value="Magneto">
-                        </label>
-                        <br>
-                        <label>Red Skull
-                            <input type="checkbox" name="enemy" value="Super Human Strength">
-                        </label>
-                        <br>
-                        <label>Lex Luthor
-                            <input type="checkbox" name="enemy" value="Batman Like Abilities">
-                        </label>
-                        <br>
-                        <label>King Pin
-                            <input type="checkbox" name="enemy" value="Flame Person">
-                        </label>
-                        <br>
-                        <label>All of the above
-                            <input type="checkbox" name="enemy" value="All Powers are had">
-                        </label>
-                        <br>
-                        <label>None. I'm amazing.
-                            <input type="checkbox" name="enemy" value="No Enemies 'cause I'm awesome">
-                        </label>
+
+                    <!--cap size-->
+                    <!--<div class="form-group">    -->
+                        <label for="cap-size" class="col-xs-12  col-md-4">What size of Super Hero Cap would you like?</label>
+                        <div class="col-xs-12 col-md-2">
+                            <select id="cap-size" name="Size">
+                                <option default>Do not want a cap</option>
+                                <option value="1001">Small</option>
+                                <option value="1002">Medium</option>
+                                <option value="1003">Large</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-xs-12 col-md-6">
+                            <h3><strong>What are your super powers?</strong></h3>
+                            <label>Speedster
+                                <input type="checkbox" name="speed" value="Speedster">
+                            </label>
+                            <br>
+                            <label>Super Human Strength
+                                <input type="checkbox" name="super-strength" value="Super Human Strength">
+                            </label>
+                            <br>
+                            <label>Basically Batman
+                                <input type="checkbox" name="batman" value="Batman Like Abilities">
+                            </label>
+                            <br>
+                            <label>Flame Person
+                                <input type="checkbox" name="flame" value="Flame Person">
+                            </label>
+                            <br>
+                            <label>Frost Bite
+                                <input type="checkbox" name="frost" value="Frost Person">
+                            </label>
+                            <br>
+                            <label>All of the above
+                                <input type="checkbox" name="Powers" value="All Powers are had" checked>
+                            </label>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 enemies">
+                        
+                            <h3><strong>Who are your arch enemies?</strong></h3>
+                            <label>Magneto
+                                <input type="checkbox" name="enemy" value="Magneto">
+                            </label>
+                            <br>
+                            <label>Red Skull
+                                <input type="checkbox" name="enemy" value="Super Human Strength">
+                            </label>
+                            <br>
+                            <label>Lex Luthor
+                                <input type="checkbox" name="enemy" value="Batman Like Abilities">
+                            </label>
+                            <br>
+                            <label>King Pin
+                                <input type="checkbox" name="enemy" value="Flame Person">
+                            </label>
+                            <br>
+                            <label>All of the above
+                                <input type="checkbox" name="enemy" value="All Powers are had">
+                            </label>
+                            <br>
+                            <label>None. I'm amazing.
+                                <input type="checkbox" name="enemy" value="No Enemies 'cause I'm awesome">
+                            </label>
+                        </div>
+
                     </div>
 
+                    <div class="form-group">
+                        <div class="col-xs-12 col-md-6">
+                            <textarea name="Bio" rows="10" cols="50" placeholder="Bio time! Tell us about yourself."></textarea>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <textarea name="tagline" maxlength="50" cols="50" placeholder="Tagline! Sum up in 50 characters or less."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <!--profile image upload-->
+                        <div class="col-xs-12 col-md-6">
+                            <h3>Upload a picture for your profile</h3>
+                            <br>
+                            <input type="file" name="fileToUpload" id="fileToUpload">
+                        </div>
+
+                        <div class="col-xs-12 col-md-6">
+                            <h3>Choice of Weapon. Hold down Control to select multiple choices.</h3>
+                            <select name="weapon" multiple>
+                                <option value="1001">Nunchucks</option>
+                                <option value="1002">Giant Sword</option>
+                                <option value="1003">Mind Control</option>
+                                <option value="1004">Elemental Control</option>
+                                <option value="1005">I'm Batman and just buy whatever I want</option>
+                                <option value="1006">It's a secret</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-6 col-xs-offset-5">
+                            <input type="submit">
+                            <input type="reset">
+                        </div>
+                    </div>
+                    
                 </div>
-
-                <div class="form-group">
-                    <div class="col-xs-12 col-md-6">
-                        <textarea name="Bio" rows="10" cols="50" placeholder="Bio time! Tell us about yourself."></textarea>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <textarea name="tagline" maxlength="50" cols="50" placeholder="Tagline! Sum up in 50 characters or less."></textarea>
-                    </div>
-]
-                </div>
-
-                <div class="form-group">
-                    <div class="col-xs-12 col-md-6">
-                        <h3>Upload a picture for your profile</h3>
-           
-                        <input type="file" name="fileToUpload" id="fileToUpload">
-
-                    </div>
-
-                    <div class="col-xs-12 col-md-6">
-                    </div>
-
-
-                </div>
-
-
-
-
-
-            </div>
-
-    
-
-            <!--arch enemies-->
-            <br>
-            <br>
-
-            <!--choice of weapon-->
-            <br>
-            <span>Choice of Weapon. Hold down Control to select multiple choices.</span>
-            <br>
-            <select name="weapon" multiple>
-                <option value="1001">Nunchucks</option>
-                <option value="1002">Giant Sword</option>
-                <option value="1003">Mind Control</option>
-                <option value="1004">Elemental Control</option>
-                <option value="1005">I'm Batman and just buy whatever I want</option>
-                <option value="1006">It's a secret</option>
-            </select>
-
-
-            <br>
-            <br>
-            <input type="submit">
-            <input type="reset">
-
-
-        </form>
-
-
-
+            </form>
+        </div>
 
     </body>
+
 </html>
