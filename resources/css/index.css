@@ -1,15 +1,9 @@
-/*body {
-    background-image: url("../images/explode-background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+/*font-family: 'Fredoka One', cursive;
+font-family: 'Bangers', cursive;
+font-family: 'Fugaz One', cursive;
+font-family: 'Limelight', cursive;
+font-family: 'Carter One', cursive;*/
 
-@media only screen and (max-width: 760px) {
-    body {
-        background-image: unset;
-    }
-}*/
 
 .navbar {
     background-color: white;
@@ -20,7 +14,7 @@
 
 .jumbotron {
   height: 300px;
-  background-image: url("../images/superhero-sunset.jpg");
+  background-image: url("../images/explode-background-2.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -33,13 +27,27 @@
 .main-class-1 {
     width: 100%;
     border: 2px solid yellow;
-    background-image: url("../images/explode-background.jpg");
+    background-image: url("../images/superhero.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-top: -30px;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 30px;
 }
 
+.first-class {
+    margin-top: -20px;
+}
 
+.second-class {
+    padding-top: 20px;
+}
+
+footer {
+    height: 200px;
+    background-image: url("../images/explode-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
