@@ -7,7 +7,7 @@
         <title>Document</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
         <link rel="stylesheet" href="resources/css/index.css">
-        <link href="https://fonts.googleapis.com/css?family=Bangers|Carter+One|Fredoka+One|Fugaz+One|Limelight" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bangers|Fugaz+One|Unica+One" rel="stylesheet">
     </head>
 
     <header>
@@ -25,6 +25,9 @@
     <body class="container">
 
         <div class="jumbotron">
+            <div class="signup">
+                <span>Super Hero Signup</span>
+            </div>
         </div>
         
         <div class="main-class-1 container">
@@ -35,21 +38,21 @@
                     <div class="form-group row">
                     <!--required user name-->
                         <label for="age" class="col-xs-12  col-md-2 col-md-offset-2 control-label">Age:</label>
-                        <div class="col-xs-12  col-md-4 ">
+                        <div class="col-xs-4 col-xs-offset-8  col-md-4 ">
                             <input id="age" type="number" name="Age" class="form-control" required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="user-name" 
                             class="col-xs-12 col-md-3 control-label">User Name:</label>
-                        <div class="col-xs-12 col-md-8 ">  
+                        <div class="col-xs-6 col-xs-offset-6  col-md-8 ">  
                             <input id="user-name" type="text" name="User-Name" class="form-control" required>
                         </div>
                     </div>
                     <div class="form-group row">
                     <!--superhero name-->
                         <label for="super-hero" class="col-xs-12  col-md-3 control-label">Super Hero Name:</label>
-                        <div class="col-xs-12  col-md-8">
+                        <div class="col-xs-6 col-xs-offset-6   col-md-8">
                             <input id="super-hero" type="text" name="Super Hero Name" class="form-control">
                         </div>
                     </div>
@@ -57,8 +60,8 @@
                     <div class="form-group row">
                     <!--cap size-->
                     <!--<div class="form-group">    -->
-                        <label for="cap-size" class="col-xs-12  col-md-8">What size of Super Hero Cap would you like?</label>
-                        <div class="col-xs-12 col-md-2">
+                        <label for="cap-size" class="col-xs-4 col-xs-offset-5  col-md-7">What size of Super Hero Cap would you like?</label>
+                        <div class="col-xs-2 col-md-2">
                             <select id="cap-size" name="Size">
                                 <option default>Do not want a cap</option>
                                 <option value="1001">Small</option>
@@ -69,10 +72,10 @@
                     </div>
                      <div class="form-group row">
                         <!--profile image upload-->
-                        <div class="col-xs-12 col-md-4 col-md-offset-1">
+                        <div class="col-xs-4 col-xs-offset-6 col-md-4 col-md-offset-1">
                             <h5>Upload a picture for your profile</h5>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-xs-4 col-xs-offset-8 col-md-4">
                             <input type="file" name="fileToUpload" id="fileToUpload">
                         </div>
 
@@ -138,27 +141,15 @@
                     </div>
                 </div>
                 <div class="third-class container col-md-6 col-md-offset-6 col-xs-12">
-
-                    <!--<div class="form-group col-xs-12 col-md-6">
-                        <h4>Choice of Weapon. Hold down Control to select multiple choices.</h4>
-                        <select name="weapon" multiple>
-                            <option value="1001">Nunchucks</option>
-                            <option value="1002">Giant Sword</option>
-                            <option value="1003">Mind Control</option>
-                            <option value="1004">Elemental Control</option>
-                            <option value="1005">I'm Batman and just buy whatever I want</option>
-                            <option value="1006">It's a secret</option>
-                        </select>
-                    </div>-->
                     
                     
                     <div class="form-group row">
-                        <div class="col-xs-12 col-md-12">
+                        <div class="col-xs-6 col-xs-offset-4 col-md-12">
                             <textarea name="Bio" rows="10" cols="50" placeholder="Bio time! Tell us about yourself."></textarea>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-xs-12 col-md-6">
+                        <div class="col-xs-6 col-xs-offset-4 col-md-6">
                             <textarea name="tagline" maxlength="50" cols="50" placeholder="Tagline! Sum up in 50 characters or less."></textarea>
                         </div>
                     </div>
@@ -183,7 +174,7 @@
             <div class="col-xs-12">
                 <div class="row">
                     <div class="col-xs-6 col-md-offset-2">
-                        <h5>Super Hero INC.</h5>
+                        <h2>Super Hero INC.</h2>
                     </div>
 
                 </div>

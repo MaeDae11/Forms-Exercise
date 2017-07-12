@@ -1,15 +1,17 @@
 /*font-family: 'Fredoka One', cursive;
 font-family: 'Bangers', cursive;
-font-family: 'Fugaz One', cursive;
 font-family: 'Limelight', cursive;
 font-family: 'Carter One', cursive;*/
-
+html {
+    
+}
 
 .navbar {
     background-color: white;
     font-size: 25px;
     text-align: center;
     border: 2px solid grey;
+    font-family: 'Unica One', cursive;
 }
 
 .jumbotron {
@@ -23,6 +25,11 @@ font-family: 'Carter One', cursive;*/
   margin-top: -20px;
 }
 
+.signup {
+    font-family: 'Bangers', cursive;
+    font-size: 80px;
+}
+
 
 .main-class-1 {
     width: 100%;
@@ -34,6 +41,8 @@ font-family: 'Carter One', cursive;*/
     margin-top: -30px;
     padding-top: 60px;
     padding-bottom: 30px;
+    font-family: 'Unica One', cursive;
+    font-size: 18px;
 }
 
 .first-class {
