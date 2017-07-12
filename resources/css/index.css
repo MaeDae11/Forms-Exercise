@@ -51,6 +51,9 @@ html {
 .second-class {
     padding-top: 20px;
 }
+.second-class h4 {
+    text-decoration: underline;
+}
 .mobile-view {
     display: none;
 }
